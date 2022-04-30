@@ -1,6 +1,51 @@
 /* Add CSS styling here */
-*{
-    font-family: 'Montserrat', sans-serif;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 header{
@@ -11,6 +56,7 @@ header{
 }
 h1{
     color: aliceblue;
+    font-size: 5em
 }
 button{
 border: 3px solid black;
@@ -50,12 +96,14 @@ button :not(:hover){
 }
 .toptext{
     text-align: center;
-    margin-top: 10vmax
+    margin-top: 10vmax;
+    font-size: 2em;
 }
 
 .top img{
     border: 1px solid black;
     height: 80vh;
+    width: 60vh;
     background: white; 
 }
 .line1 img{
@@ -68,7 +116,7 @@ button :not(:hover){
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-   padding-top: 25px;
+   margin-top: 25px;
    text-align: center;
 }
 
@@ -76,8 +124,9 @@ button :not(:hover){
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 25px;
+    margin-top: 25px;
     text-align: center;
+    margin-bottom: 25px;
  }
 .line1 div{
     border: 1px solid black
@@ -90,8 +139,10 @@ footer{
  padding: 5vh;
     height: 40%;
     text-align: center;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
+
+}
+footer button{
+    margin: 1%;
 }
 @media(max-width: 500px){
     header{
@@ -126,7 +177,8 @@ footer{
     
     .top img{
         border: 1px solid black;
-        height: 80vh;
+        height: 60vh;
+        width: 54v;
         background: white; 
     }
     .line1{
@@ -135,9 +187,9 @@ footer{
         justify-content: space-evenly;
         text-align: center;
      }
-    .line1 div{
+/*     .line1 div{
         margin: 4%;
-    }
+    } */
      
      .line2{
         display: flex;
@@ -145,14 +197,16 @@ footer{
         justify-content: space-evenly;
         text-align: center;
      }
-     .line2 div{
+  /*    .line2 div{
         margin: 4%;
-    }
+    } */
      .line1 img{
-        height: 20vh;
+        height: 30vh;
+        width: 30vh;
         }
     .line2 img{
-            height: 15vh;
+        height: 25vh;
+        width: 30vh;
             }
 }
 
@@ -163,6 +217,9 @@ footer{
         flex-direction: column;
         justify-items: center;
         align-items: center;
+      }
+      h1{
+          font-size: 3em;
       }
       nav{
           width: 60%;
@@ -180,16 +237,19 @@ footer{
         justify-content: center;
         border: 1px solid black;
         background: rgb(23, 207, 210);
-       
+       align-items: center;
     }
     .toptext{
         text-align: center;
-        margin-top: 10vmax
+        margin-top: 5vmax;
+        font-size: 1.5em;
+        margin-bottom: 5vmax;
     }
     
     .top img{
         border: 1px solid black;
-        height: 90vh;
+        height: 70vh;
+        width: 52.5% ;
         background: white; 
     }
     .line1{
